@@ -1,0 +1,42 @@
+<%- include('partials/header') %>
+<%- include('partials/topbar') %>
+<header>
+    <h1>Shopping Cart</h1>
+  </header>
+  <main>
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Product 1</td>
+          <td>$29.99</td>
+          <td>2</td>
+          <td>$59.98</td>
+        </tr>
+        <tr>
+          <td>Product 2</td>
+          <td>$19.99</td>
+          <td>1</td>
+          <td>$19.99</td>
+        </tr>
+        <!-- Add more rows for additional products -->
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total:</td>
+          <td>$79.97</td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="checkout">
+      <a href="checkout.html">Proceed to Checkout</a>
+    </div>
+  </main>
+<%- include('partials/footer') %>

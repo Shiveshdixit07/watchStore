@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+<%- include('partials/topbar') %>
+<div class="text-center">
+<main class="form-signin w-100 m-auto">
+    <form action="/login" method="post">
+        <img class="bi logo"
+        src="https://images-platform.99static.com//a7IqG6U8Fh7mCV_ennJIuyxfE9U=/89x91:898x900/fit-in/500x500/99designs-contests-attachments/126/126073/attachment_126073781"
+        alt="logo">
+      <h2 class="h3 mb-3 fw-normal">Please Sign In</h2>
+  
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+  
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <a href="/signUp" class="signUp">New User Sign Up</a>
+      <button class="w-100 btn btn-lg btn-primary " type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">© 2023</p>
+    </form>
+  </main>
+</div>
+<%- include('partials/footer') %>
